@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+	<xs:element name="file" type="xs:string"/>
+	<xs:element name="id" type="xs:boolean"/>
+	<xs:element name="webgl">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="id"/>
+				<xs:element ref="file"/>
+			</xs:sequence>
+			<xs:attribute name="xmlns:xlink" type="xs:anyURI" use="required"/>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
